@@ -1,0 +1,610 @@
+﻿/* Reset CSS */
+body, h1, h2, p, ul, li, form, label, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Hakkımda, Eğitim, Deneyimler, Projelerim, İletişim için bölüm stilleri */
+section {
+    margin: 30px; /* Kenar boşluğu artırıldı */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Gölgeyi artırın */
+}
+
+    section h2 {
+        color: #333;
+        font-size: 24px; /* Başlık font boyutu artırıldı */
+        margin-bottom: 15px; /* Başlık ile metin arasındaki boşluğu artırır */
+    }
+
+    section p {
+        font-size: 16px; /* Paragraf font boyutu artırıldı */
+        color: #666;
+    }
+
+
+/* İletişim Formu Stilleri */
+#contact-form {
+    text-align: center;
+    margin: 200px auto 30px; /* Merkezi hizalama ve üst kenar boşluğunu ayarlama */
+    max-width: 800px; /* Maksimum genişlik ayarı */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+    #contact-form h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    #contact-form p {
+        font-size: 18px;
+        color: #666;
+    }
+
+    #contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-form label {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    #contact-form textarea {
+        height: 150px;
+    }
+
+    #contact-form input[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        #contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+/* İletişim bilgileri */
+#contact-info {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 30px auto; /* Merkezi hizalama ve kenar boşluğunu ayarlama */
+    max-width: 800px; /* Maksimum genişlik ayarı */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+    #contact-info h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    #contact-info p {
+        font-size: 18px;
+        color: #666;
+        margin-left: 10px; /* Bilgilerin başına nokta eklemek için sola boşluk ekleyin */
+    }
+/* Sosyal medya iconlarını sağ üst köşeye taşıma */
+.thin-top-bar .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.project-details {
+    display: none;
+}
+
+    /* Sosyal medya iconlarını stilini güncelleme */
+    .thin-top-bar .social-media a {
+        font-size: 22px;
+        color: white;
+        margin-top: -15px;
+        margin-right: 20px; /* İkonlar arasındaki boşluğu ayarlayın */
+        text-decoration: none;
+        margin-left: 10px;
+        transition: color 0.3s;
+    }
+
+        .thin-top-bar .social-media a:hover {
+            color: #007BFF;
+        }
+
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* İkonları yatayda hizala */
+    margin-top: 20px; /* İkonlar ile iletişim bilgileri arasındaki boşluğu ayarlayın */
+}
+
+    .social-media li {
+        margin: 0 10px; /* İkonlar arasındaki boşluğu ayarlayın */
+    }
+
+    .social-media a {
+        text-decoration: none;
+        color: #333;
+        font-size: 24px;
+        transition: color 0.3s;
+    }
+
+        .social-media a:hover {
+            color: #007BFF;
+        }
+
+
+/* Footer Stili */
+footer {
+    background-color: #333; /* Footer arka plan rengi */
+    color: #fff; /* Metin rengi */
+    text-align: center; /* Metni ortala */
+    padding: 3px 0; /* Footer içeriği etrafındaki boşluklar */
+}
+
+/* Telif Hakkı Metni Stili */
+.footer-content {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+}
+
+    .footer-content p {
+        font-size: 18px; /* Metin font boyutu */
+        margin: 0; /* Kenar boşluğunu sıfırla */
+    }
+/* Mail adresini ve ikonunu sola taşıyın */
+.thin-top-bar .email {
+    margin-left: 20px; /* Sola taşınacak mesafeyi ayarlayın */
+}
+
+/* İkonu sola taşıyın */
+.thin-top-bar .fas.fa-envelope {
+    margin-left: 30px; /* Sola taşınacak mesafeyi ayarlayın */
+}
+
+/* İnce top-bar */
+.thin-top-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 5px 0;
+    font-size: 16px;
+    height: 30px;
+    transform: translateY(0);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 1;
+    pointer-events: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* İnce top-bar'ı gizlemek için animasyon ekleyin */
+    .thin-top-bar.hidden {
+        transform: translateY(-30px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+/* Ana içerik için üst boşluğu ayarlayın */
+section {
+    margin-top: 200px; /* top-bar'ın yüksekliği kadar boşluk bırakır */
+}
+
+
+
+.top-bar {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    padding: 0;
+    height: 150px;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+
+.image-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 100px; /* Resim ve metni sola hizala, sağa odaklanmasını sağla */
+    margin-right: auto; /* Resim ve metni sola hizala, sola odaklanmasını sağla */
+}
+
+    .image-and-text img {
+        width: 128px;
+        height: 128px;
+        margin-right: 100px;
+    }
+
+.text h1 {
+    font-size: 54px;
+    margin-bottom: 1px;
+}
+
+.text p {
+    font-size: 38px;
+    margin: 0;
+}
+
+.top-bar-buttons {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end; /* Düğmeleri sağa hizala */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Top-bar yüksekliği kadar genişletin */
+    position: absolute; /* Mutlak bir konumlandırma kullanın */
+    top: 50%; /* Yatay merkezi hizalamak için */
+    transform: translateY(-50%); /* Dikey merkezi hizalamak için */
+    right: 300px; /* Düğmeleri sağa kaydırın */
+}
+
+    .top-bar-buttons a {
+        text-decoration: none;
+        color: white;
+        margin-left: 50px; /* Düğmeler arasındaki boşluğu ayarlayın */
+        font-size: 22px;
+        transition: color 0.3s;
+    }
+
+        .top-bar-buttons a:first-child {
+            margin-left: 0; /* İlk düğmenin sol boşluğunu sıfırla */
+        }
+
+        .top-bar-buttons a:hover {
+            color: #007BFF;
+        }
+
+.top-bar h1 {
+    font-family: 'Ink Free', sans-serif; /* Kullanmak istediğiniz yeni fontu belirtin */
+    font-size: 38px; /* Font boyutunu isteğinize göre ayarlayın */
+    font-weight: bold; /* Yazı kalınlığını isteğinize göre ayarlayın */
+    /* Diğer stil özelliklerini ekleyebilirsiniz */
+}
+
+.top-bar p {
+    font-family: 'Ink Free', sans-serif; /* Kullanmak istediğiniz yeni fontu belirtin */
+    font-size: 28px; /* Font boyutunu isteğinize göre ayarlayın */
+    /* Diğer stil özelliklerini ekleyebilirsiniz */
+}
+
+/* Başlıkları stilleme */
+.project-title {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Projeleri varsayılan olarak gizleme */
+.project-details {
+    display: none;
+}
+/* Projelerim başlığını altını çiz */
+#projects h1 {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+/* Mobil cihazlar için menüyü varsayılan olarak gizleme */
+.mobile-menu {
+    display: none;
+}
+
+/* Göster/Gizle düğmesini stilleme */
+.toggle-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+    /* Göster/Gizle düğmesinin hover efekti */
+    .toggle-button:hover {
+        background-color: #0056b3;
+    }
+.menu-list {
+    display: none;
+}
+    /* Ekran genişliği 768 pikselden küçük olduğunda (mobil cihazlar için) */
+    @media (max-width: 1500px) {
+        /* İletişim başlığını ve iletişim bilgilerini küçültme */
+        #contact-form h2,
+        #contact-info h2 {
+            font-size: 20px; /* İstenilen boyuta ayarlayabilirsiniz */
+        }
+
+        #contact-form label {
+            font-size: 16px; /* İstenilen boyuta ayarlayabilirsiniz */
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea {
+            font-size: 16px; /* İstenilen boyuta ayarlayabilirsiniz */
+            padding: 8px; /* İstenilen iç boşluğu ayarlayabilirsiniz */
+        }
+
+        section h2 {
+            font-size: 20px; /* Başlık font boyutunu ayarlayın */
+        }
+
+        /* İnce top-bar için stiller */
+        .thin-top-bar {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            padding: 5px 0;
+            font-size: 16px;
+            height: 30px;
+            transform: translateY(0);
+            transition: transform 0.3s, opacity 0.3s;
+            opacity: 1;
+            pointer-events: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0; /* Bu satırı ekleyerek margin'leri kaldırın */
+        }
+
+            /* thin-top-bar'ı gizlemek için animasyon ekleyin */
+            .thin-top-bar.hidden {
+                transform: translateY(-30px);
+                opacity: 0;
+                pointer-events: none;
+            }
+
+        /* Ana içerik için üst boşluğu ayarlayın */
+        section {
+            margin-top: 200px; /* top-bar'ın yüksekliği kadar boşluk bırakır */
+        }
+
+
+        /* Hamburger Menü Stili */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333; /* Hamburger menü arka plan rengi */
+            color: white; /* Hamburger menü metin rengi */
+            text-align: center;
+            z-index: 9999; /* Diğer öğelerden üstte olmasını sağlar */
+            display: none; /* Başlangıçta gizli tutun */
+        }
+
+        /* Hamburger Menü Gösterme Sınıfı */
+        .show-menu .mobile-menu {
+            display: block; /* Menüyü göstermek için bu sınıfı kullanın */
+        }
+
+        /* Top Bar Stili */
+        .top-bar {
+            background-color: #111111;
+            color: white;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9998;
+            padding: 0;
+            height: 150px;
+            transform: translateY(0);
+            transition: transform 0.3s;
+            user-select: none; /* Metin seçilemez hale getirilir */
+        }
+
+        /* Scroll ile Kaybolma */
+        body.scrolled .top-bar {
+            transform: translateY(-150px); /* Scroll ile kaybolma efekti */
+        }
+
+        /* Scroll etkinleştirme */
+        body.scrolled {
+            padding-top: 150px; /* Sayfa içeriğini top-bar'ın yüksekliği kadar kaydırın */
+        }
+
+
+        .thin-top-bar .left {
+            display: flex;
+            align-items: center; /* Mail ikonunu ve metni dikey hizalama */
+            margin-left: -5px; /* Sol boşluğu küçülttük */
+            margin-right: 15px;
+        }
+
+            .thin-top-bar .left i {
+                font-size: 16px; /* Ikon boyutunu küçülttük */
+                margin-right: 5px; /* Mail ikonu ile metin arasındaki boşluğu küçülttük */
+            }
+
+            .thin-top-bar .left.mail-address {
+                font-size: 16px; /* Mail metni boyutunu belirledik */
+            }
+
+        .thin-top-bar .social-media a {
+            font-size: 16px; /* Sosyal medya ikonlarının boyutunu küçülttük */
+            margin-left: 1px; /* İkonlar arası boşluğu küçülttük */
+            margin-right: 5px;
+        }
+
+        .thin-top-bar .social-media i {
+            margin-right: 5px; /* İkonlar ile metin arasındaki boşluğu küçülttük */
+        }
+
+
+
+
+        .image-and-text img {
+            width: 48px;
+            height: 48px;
+            margin-right: 10px;
+        }
+
+        .text h1 {
+            font-size: 24px;
+            text-align: left; /* Metni sola hizala */
+        }
+
+        .text p {
+            font-size: 18px;
+            text-align: left; /* Metni sola hizala */
+        }
+
+
+        /* Hamburger menü simgesini stilize etme */
+        .menu-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            left: 50%; /* Soldan ortaya hizala */
+            transform: translateX(-50%); /* Ortalamak için yatayda kaydırma yap */
+            top: 110px; /* Üstten hizala */
+        }
+
+        .menu-icon {
+            width: 50px;
+            height:20px;
+            
+            background-color: #007BFF; /* Çizgilerin rengini mavi yapın */
+            transition: background-color 0.3s;
+            border-radius: 2px; /* Çizgilerin köşelerini yuvarlak yapın */
+        }
+
+            /* İlk ve son çizgiler arasına bir boşluk ekleyin */
+            .menu-icon:first-child {
+                margin-bottom: 5px;
+            }
+
+            .menu-icon:last-child {
+                margin-top: 5px;
+            }
+
+        /* Menüyü gösterme */
+        .show-menu {
+            display: block !important;
+        }
+
+
+        .menu-list {
+            display: none;
+            text-align: center;
+            position: absolute;
+            top: 110%; /* Menü düğmesinin altında açılmasını sağlar */
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 50px #007BFF;
+            z-index: 999; /* Diğer öğelerden üstte olmasını sağlar */
+        }
+
+       
+
+        .menu-list li {
+            list-style: none;
+            margin: 10;
+            padding: 0;
+        }
+
+            .menu-list a {
+                display: block;
+                padding: 10px 40px;
+                text-decoration: none;
+                color: #333;
+                transition: background-color 0.3s;
+                user-select: none; /* Metin seçilemez hale getirilir */
+            }
+
+            .menu-list a:hover {
+                background-color: #007BFF;
+                color: white;
+            }
+
+
+
+
+        .top-bar-buttons {
+            display: none;
+        }
+
+
+    }
