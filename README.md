@@ -1,4 +1,4 @@
-# Personel Blog Website Example
+# Website Example
 
 
 Example1 Live Demo
